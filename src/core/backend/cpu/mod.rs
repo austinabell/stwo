@@ -10,6 +10,7 @@ use crate::core::poly::line::LineEvaluation;
 use crate::core::utils::bit_reverse;
 
 #[derive(Copy, Clone, Debug)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct CPUBackend;
 
 impl Backend for CPUBackend {}
